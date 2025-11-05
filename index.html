@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Azka Maulana Atqia</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ===== Header Navigation ===== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Portfolio</a>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home" class="nav__link active-link">Home</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <button id="nav-toggle" class="btn btn--secondary">☰</button>
+        </nav>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main>
+
+        <!-- ===== Home Section ===== -->
+        <section class="home section" id="home">
+            <div class="container home__container">
+
+                <div class="home__content">
+                    <h1 class="home__title">
+                        Azka Maulana Atqia
+                        <span class="home__title-accent">Mahasiswa Teknik Biomedis</span>
+                    </h1>
+                    <p class="home__description">
+                        Mahasiswa teknik biomedis di Universitas Gadjah Mada, berdedikasi untuk
+                        memperoleh keterampilan dan pengalaman baru di bidang ini. Perjalanan
+                        akademis saya telah memberikan dasar kuat dalam prinsip kalkulus dan
+                        fisika, dan saya ingin memperluas pengetahuan saya lebih lanjut. Saya
+                        aktif mencari peluang untuk mendapatkan pengalaman langsung dan
+                        berkolaborasi dengan para profesional di bidang teknik dan teknologi.
+                        Tujuan saya adalah berkontribusi pada proyek dan terus belajar dari
+                        setiap kesempatan yang datang.
+                    </p>
+                    <div class="home__buttons">
+                        <a href="#projects" class="btn btn--primary">
+                          <i class="bi bi-folder2-open"></i>
+                          Lihat Projek Saya
+                        </a>
+                        <a href="#contact" class="btn btn--secondary">
+                          <i class="bi bi-send-fill"></i>
+                          Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__image">
+                    <div class="profile-frame">
+                        <img src="assets/profile_azka.jpg" alt="Foto Profil Azka Maulana Atqia" class="home__img" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== Projects Section ===== -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <h2 class="section__title">Proyek Saya</h2>
+                <p class="section__subtitle">
+                    Berikut adalah beberapa proyek yang telah saya kerjakan
+                </p>
+
+                <div class="projects__carousel-wrapper">
+                    <div id="projects-container">
+                    </div>
+                </div>
+                <div class="carousel__navigation">
+                    <button id="project-carousel-prev" class="carousel__nav-btn">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button id="project-carousel-next" class="carousel__nav-btn">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Certificates Section ===== -->
+        <section class="certificates section" id="certificates">
+          <div class="container">
+                <h2 class="section__title">Sertifikat</h2>
+                <div class="certificates__carousel-wrapper">
+                  <div class="certificates__container" id="certificates-container"></div>
+            </div>
+
+            <div class="carousel__navigation">
+                <button id="cert-carousel-prev" class="carousel__nav-btn">
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+                <button id="cert-carousel-next" class="carousel__nav-btn">
+                 <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ===== Certificate Modal ===== -->
+        <div id="certificate-modal" class="modal hidden">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+                <div class="modal-body">
+                    <h2 id="cert-modal-title"></h2>
+                    <img id="cert-modal-image" src="" alt="Certificate Preview" class="modal-cert-img" />
+                    <p id="cert-modal-issuer"></p>
+                    <div id="cert-modal-link"></div>
+                </div>
+            </div>
+        </div>
+
+      <!-- ===== About Section ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section__title">Tentang Saya</h2>
+            <p class="section__subtitle">Background pendidikan dan keahlian teknis</p>
+
+            <div class="about__grid">
+                <div class="about__education">
+                    <h3 class="highlight">Pendidikan & Riset</h3>
+                    <p>
+                        Mahasiswa Teknik Biomedis semester 5 berfokus pada 3D Design, Web
+                        Development, dan Rangkaian PCB.
+                    </p>
+                    <ul>
+                        <li><strong>Universitas:</strong> Universitas Gadjah Mada</li>
+                        <li><strong>Program Studi:</strong> Teknik Biomedis</li>
+                        <li><strong>Semester:</strong> 5 (Aktif)</li>
+                    </ul>
+                </div>
+
+                <div class="about__skills">
+                    <h3 class="highlight">Keahlian Teknis</h3>
+                    <p>
+                        <strong>Software:</strong> Python, MATLAB, LTSpice, OpenCV, Blender,
+                        HTML, CSS, JavaScript
+                    </p>
+                    <p><strong>Hardware:</strong> PCB Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section__title">Hubungi Saya</h2>
+            <p class="section__subtitle">
+                Mari berkolaborasi atau berdiskusi tentang proyek menarik
+            </p>
+
+            <div class="contact__grid">
+                <div class="contact__text">
+                    <h3 class="highlight">Mari Terhubung!</h3>
+                    <p>
+                        Saya tertarik untuk berdiskusi dan bergabung dalam proyek seputar
+                        teknologi dan kesehatan.
+                    </p>
+                </div>
+
+                <div class="contact__links">
+                    <a href="mailto:azkamaulanaatqia@gmail.com" class="btn btn--secondary">
+                      <i class="bi bi-envelope-fill"></i>
+                      Email Saya
+                    </a>
+                    <a href="https://linkedin.com/in/azkamaulanaatqia" class="btn btn--secondary">
+                      <i class="bi bi-linkedin"></i>
+                      LinkedIn
+                    </a>
+                    <a href="https://github.com/azkamaulanaatqia" class="btn btn--secondary">
+                      <i class="bi bi-github"></i>
+                      GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== JavaScript ===== -->
+<script src="app.js"></script>
