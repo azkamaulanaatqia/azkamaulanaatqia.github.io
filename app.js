@@ -10,7 +10,7 @@ class PortfolioApp {
             category: "PCB Design",
             images: ["assets/mosfet1.jpg", "assets/mosfet2.png", "assets/mosfet3.png", "assets/mosfet4.png", "assets/mosfet5.png"],
             short: "Desain, Simulasi, dan Perencanaan Layout Amplifier Common-Source NMOS.",
-            codeLink: "https://github.com/username/filter-lp",
+            codeLink: "",
             reportLink: "https://drive.google.com/file/d/1nsGvwYg8U233ybEwNLwxoib-6zkeM_5Q/view?usp=sharing",
             detail: `
                 <strong>Tujuan:</strong> Proyek ini mencakup proses perancangan, validasi kinerja melalui simulasi, dan perencanaan implementasi fisik untuk sebuah rangkaian Common-Source Amplifier menggunakan transistor NMOS IRFZ43N.-CNN.<br><br>
@@ -24,7 +24,7 @@ class PortfolioApp {
             category: "Artificial Intelegent",
             images: ["assets/lstm1.png", "assets/cnn1.png"],
             short: "Mengklasifikasikan sinyal EKG dari dataset yang tersedia secara publik, dengan fokus pada deteksi fibrilasi atrium menggunakan LSTM dan 1D-CNN.",
-            codeLink: "https://github.com/username/filter-lp",
+            codeLink: "https://github.com/azkamaulanaatqia/ekg-classification-lstm-cnn-AMA.git",
             reportLink: "https://drive.google.com/file/d/1tcWV9MWoatwath5SZFMAUKT3IBMsxGWP/view?usp=sharing",
             detail: `
                 <strong>Tujuan:</strong> Mengklasifikasikan sinyal EKG dari dataset yang tersedia secara publik, dengan fokus pada deteksi fibrilasi atrium menggunakan LSTM dan 1D-CNN.<br><br>
@@ -38,7 +38,7 @@ class PortfolioApp {
             category: "PCB Design",
             images: ["assets/LPF2.jpg", "assets/LPF1.png", "assets/LPF3.jpg"],
             short: "Mendesain dan mengimplementasikan rangkaian LPF orde 1 untuk memenuhi kriteria yang diinginkan.",
-            codeLink: "https://github.com/username/3d-prosthesis",
+            codeLink: "",
             reportLink: "https://drive.google.com/file/d/1qScpsexzc52iu3nkEvF-mMJZv2RIhp5j/view?usp=sharing",
             detail: `
                 <strong>Tujuan:</strong> esain dan mengimplementasikan rangkaian LPF orde 1 untuk memenuhi kriteria yang diinginkan.<br><br>
@@ -530,4 +530,5 @@ setupProjectCarousel() {
 // =========================================================
 //  Initialize Application
 // =========================================================
+
 const app = new PortfolioApp();
